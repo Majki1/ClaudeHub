@@ -1,0 +1,32 @@
+{
+  "everything-claude-code": {
+    "source": {
+      "source": "github",
+      "repo": "affaan-m/everything-claude-code"
+    }
+  },
+  "claude-hud": {
+    "source": {
+      "source": "github",
+      "repo": "jarrodwatts/claude-hud"
+    }
+  },
+  "callstack-agent-skills": {
+    "source": {
+      "source": "github",
+      "repo": "callstackincubator/agent-skills"
+    }
+  },
+  "ui-ux-pro-max-skill": {
+    "source": {
+      "source": "github",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+    }
+  },
+  "expo-plugins": {
+    "source": {
+      "source": "github",
+      "repo": "expo/skills"
+    }
+  }
+}

@@ -2,6 +2,26 @@
 
 Personal hub for Claude Code configuration: agents, rules, skills, and plugin marketplaces. The source of truth for what gets mirrored into `~/.claude/` across machines.
 
+## Install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Majki1/ClaudeHub/main/install.sh | bash
+```
+
+This clones the hub to `~/.claude-hub`, symlinks `skills/`, `agents/`, and `rules/common/` into `~/.claude/`, registers the plugin marketplaces in `~/.claude/settings.json`, and adds a managed block to `~/.claude/CLAUDE.md`. Re-run any time to update — symlinks pick up `git pull` automatically.
+
+Flags:
+
+| Flag | What it does |
+|---|---|
+| `--copy` | Copy files instead of symlinking (loses live updates). |
+| `--force` | Overwrite existing entries at the destination. |
+| `--dry-run` | Print what would happen, do nothing. |
+| `--uninstall` | Remove all symlinks pointing at `~/.claude-hub` and strip the CLAUDE.md block. |
+| `-v` | Show every link/skip decision. |
+
+After install, restart Claude Code and run `/plugin` inside the CLI to install individual plugins from the registered marketplaces.
+
 ## Layout
 
 | Path | Purpose |

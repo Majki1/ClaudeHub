@@ -1,0 +1,29 @@
+# Git Workflow
+
+## Commit Message Format
+
+Short, simple, descriptive messages. No prefixes (no `feat:`, `fix:`, `chore:`, etc.).
+
+```
+<short description of what changed>
+```
+
+Guidelines:
+- Keep under ~60 characters when possible
+- Use imperative mood ("add login button", not "added login button")
+- Lowercase, no trailing period
+- Describe what changed, not why (save the "why" for the body or PR description)
+
+Note: Attribution disabled globally via ~/.claude/settings.json.
+
+## Pull Request Workflow
+
+When creating PRs:
+1. Analyze full commit history (not just latest commit)
+2. Use `git diff [base-branch]...HEAD` to see all changes
+3. Draft comprehensive PR summary
+4. Include test plan with TODOs
+5. Push with `-u` flag if new branch
+
+> For the full development process (planning, TDD, code review) before git operations,
+> see [development-workflow.md](./development-workflow.md).
